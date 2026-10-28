@@ -1,0 +1,33 @@
+# AI-Based 5G Digital Twin Network Simulator - Backend Dependencies
+
+# Web Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+
+# Data Validation
+pydantic>=2.10.0
+
+# HTTP Client for Groq API
+httpx>=0.26.0
+
+# WebSocket Support
+websockets>=13.0,<16.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Database (Optional - for history persistence)
+supabase>=2.0.0
+
+# Machine Learning / Numerical Computing
+numpy>=1.24.0
+
+# Testing
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+pytest-mock>=3.11.0
+hypothesis>=6.88.0
+anyio>=4.0.0
+
+# Development
+black>=24.1.0

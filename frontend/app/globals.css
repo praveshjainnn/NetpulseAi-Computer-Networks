@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  --background: #080c14;
+  --foreground: #f8fafc;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  
+  /* QoSSync RL - Midnight & Electric Blue Design System */
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-primary-glow: rgba(59, 130, 246, 0.25);
+  --color-secondary: #6366f1;
+  --color-accent: #0284c7;
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-danger: #ef4444;
+
+  /* Surface layers */
+  --color-midnight-base: #080c14;
+  --color-midnight-card: #0d1527;
+  --color-midnight-surface: #111b33;
+  --color-midnight-border: #1e293b;
+  --color-midnight-border-highlight: #334155;
+
+  /* Typography */
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+
+  /* Strategy Distinctive Tokens */
+  --color-baseline: #94a3b8;
+  --color-ai: #818cf8;
+  --color-rl: #3b82f6;
+
+  /* Traffic Type Colors */
+  --color-video: #38bdf8;
+  --color-gaming: #818cf8;
+  --color-iot: #f59e0b;
+  --color-voip: #34d399;
+}
+
+body {
+  background: #080c14;
+  color: #f8fafc;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbars for sleek studio look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #080c14;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Fix Recharts transparent surfaces and dark tooltips */
+.recharts-wrapper,
+.recharts-surface {
+  background: transparent !important;
+}
+
+.recharts-legend-wrapper {
+  color: #f8fafc !important;
+}
+
+.recharts-default-tooltip {
+  background: #0d1527 !important;
+  border: 1px solid #1e293b !important;
+  border-radius: 0.5rem !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+  color: #f8fafc !important;
+}
