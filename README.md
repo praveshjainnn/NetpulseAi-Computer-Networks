@@ -23,19 +23,6 @@
   <strong>Watch AI outperform traditional 5G network allocation in real time.</strong>
 </p>
 
-<p align="center">
-  <a href="https://netpulseai.tanisheesh.in">
-    <img src="https://img.shields.io/badge/live_demo-06b6d4?style=flat-square&color=06b6d4" alt="Live Demo">
-  </a>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js" alt="Next.js">
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/Groq-F55036?style=flat-square" alt="Groq">
-  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white" alt="Supabase">
-  <img src="https://img.shields.io/badge/license-GPL--3.0-06b6d4?style=flat-square" alt="License">
-</p>
-
 ---
 
 <p align="center">
@@ -47,9 +34,6 @@
 ## What is NetPulse AI?
 
 NetPulse AI is a full-stack 5G bandwidth allocation simulator that runs three strategies — a traditional equal-split baseline, an AI weighted-priority allocator, and a reinforcement-learning Multi-Armed Bandit — against identical traffic demands and streams the comparison to your browser in real time. Every 50 simulation ticks, a Groq-hosted Llama 3.3-70B model evaluates the current network state and adjusts the AI allocator's priorities, narrating its reasoning in plain English. The result is a live, measurable demonstration that AI allocation produces consistently higher QoS scores than the baseline — visible within seconds of starting a simulation.
-
-> **Live demo →** [netpulseai.tanisheesh.in](https://netpulseai.tanisheesh.in)
-> API docs → [netpulseai.onrender.com/docs](https://netpulseai.onrender.com/docs)
 
 ---
 
@@ -92,15 +76,6 @@ Sign session tokens with JWTs instead of bare UUID headers (currently session ID
 
 ---
 
-## Docs
-
-| Document | Description |
-|---|---|
-| [PRD](docs/PRD.md) | Product requirements — goals, user stories, non-goals |
-| [Architecture](docs/ARCHITECTURE.md) | System design, data flow, component breakdown |
-| [Decisions](docs/DECISIONS.md) | Every major technical decision and why |
-| [Setup](docs/SETUP.md) | Local dev setup, env vars, deployment |
-| [Changes & Audit](docs/CHANGES.md) | Full audit of changes, phases, tests, and modifications |
 
 ---
 
@@ -130,8 +105,4 @@ In accordance with GPL-3.0 requirements, prominent notices have been added to al
 5. **Stateful Reset:** Guaranteed that resetting the engine wipes all Q-values, action counts, and epsilon schedules, restoring allocators and traffic generators to initial states.
 6. **Graceful Explainability:** When `GROQ_API_KEY` is not provided, a rule-based insight engine synthesizes live RL learning statistics instead of a static placeholder.
 
----
 
-## Original Author
-
-**Tanish Poddar** — [tanisheesh.in](https://tanisheesh.in) · [LinkedIn](https://linkedin.com/in/tanisheesh) · [GitHub](https://github.com/tanisheesh)
